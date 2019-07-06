@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Custom Pie Chart</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="src/custom-pie-chart/custom-pie-chart.js"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <custom-pie-chart
+      inner-radius="30"
+      radius="160"
+      outer-radius="165"
+      pie-sections='{"0": "AI", "1":"CRM","2":"PMS","3":"OMS","4":"Reporting","5":"Risk","6":"Recon" }'
+      pie-legend-colors='{
+    "6": { "r": 39, "g": 182, "b": 255 },
+    "1": { "r": 255, "g": 44, "b": 106 },
+    "2": { "r": 116, "g": 70, "b": 255 },
+    "3": { "r": 17, "g": 224, "b": 121 },
+    "4": { "r": 35, "g": 31, "b": 243 },
+    "5": { "r": 255, "g": 191, "b": 38 },
+    "0": {
+      "r": 254,
+      "g": 167,
+      "b": 36,
+      "lg": { "angle": "135deg", "finalColor": { "r": 254, "g": 167, "b": 36 } }
+    }
+  }'
+      starting-angle="1.57"
+    ></custom-pie-chart>
+  </body>
+</html>
